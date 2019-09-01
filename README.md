@@ -1,11 +1,20 @@
 ## 跟着码匠社区开发的代码
-[原git地址](https://github.com/codedrinker/community)
 
-开发日期:  8.25 starting
+## 开发日期:  8.25 starting
 
 ## 框架：spring boot 
+## 开发工具：
+
+## 相关资料
+https://spring.io/guides
+https://spring.io/guides/gs/serving-web-content/
 
 ## 开发工具 git
+https://git-scm.com/download
+
+## 前端开发框架： bootstrap 
+  文档地址： https://v3.bootcss.com/getting-started/
+
 [git](https://git-scm.com/download) 
 
 [推荐的画图工具： Visual Paradigm 下载地址](https://www.visual-paradigm.com/cn/)
