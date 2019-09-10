@@ -28,4 +28,13 @@ public class GitHubUser {
     public void setPio(String pio) {
         this.pio = pio;
     }
+
+    @Override
+    public String toString() {
+        return "GitHubUser{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", pio='" + pio + '\'' +
+                '}';
+    }
 }

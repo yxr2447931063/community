@@ -36,6 +36,11 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
         <!--引入 OK Http的jar包-->
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
@@ -48,6 +53,22 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.59</version>
         </dependency>
+
+        <!-- h2 数据库-->
+        <!-- MySql 5.5 Connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.15</version>
+        </dependency>
+
+        <!--mybatis-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+
 
     </dependencies>
 
