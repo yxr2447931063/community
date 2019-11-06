@@ -48,7 +48,7 @@ public class OAuthorizeController {
 
         String accessToken = gitHubProvider.getAccessToken(accessTokenDTO);
         GitHubUser gitHubUser = gitHubProvider.getUser(accessToken);
-        if(gitHubUser != null){
+        if(gitHubUser != null && gitHubUser.getId() != null){
             User user = new User();
             //ctrl + alt + v :抽取变量
             String token = UUID.randomUUID().toString();
@@ -57,6 +57,7 @@ public class OAuthorizeController {
             user.setAccountId(String.valueOf(gitHubUser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
+            user.setAvatarUrl(gitHubUser.getAvatarUrl());
             userMapper.insert(user);
             //用户登陆成功，写cookie 和 session
             response.addCookie(new Cookie("token",token)); //登陆成功，自动存入cookie
